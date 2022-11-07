@@ -4,40 +4,26 @@
   outline: none;
   box-sizing: border-box;
   list-style: none;
+  text-decoration: none;
+}
+
+:root{
+  --white-color: #fff;
+  --golden-color: #F1C912;
+  --yellow-color: #EDC242;
+  --black-color: #2B2A25;
+  --grey-color: #e3e3e3;
+}
+
+@font-face {
+  font-family: Open-sans;
+  src: url(./utils/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
 body{
   background: linear-gradient(to left,#78B5E3 ,#304848);
   min-height: 100vh;
   color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-main{
-  background-color: #fff;
-  border-radius: 4px;
-  padding: 10px;
-  color: #333;
   display: block;
-  position: relative;
-}
-
-a{
-  background-color: #333;
-  border-radius: 4px;
-  padding: 10px;
-  color: #fff;
-  display: block;
-  position: relative;
-}
-
-main a{
-  background-color: transparent !important;
-  border-radius: 4px;
-  padding: 10px;
-  color: #78B5E3;
-  display: block;
-  position: relative;
+  font-family: Open-sans;
 }
