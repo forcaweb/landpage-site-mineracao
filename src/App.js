@@ -1,5 +1,5 @@
 import * as React from 'react';
-import env from 'react-dotenv';
+// import env from 'react-dotenv';
 import { Routes, Route } from 'react-router-dom';
 import Home from './componets/home/home';
 import About from './componets/about/about';
@@ -8,7 +8,6 @@ import Header from './componets/header/header';
 import './App.css';
 
 export default function App() {
-  console.log(env);
   return (
     <>
       <Header />
