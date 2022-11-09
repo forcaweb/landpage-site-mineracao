@@ -9,6 +9,8 @@ header{
   align-items: center;
   background: var(--white-color);
   padding: 20px 50px;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(51, 51, 51, 0.213);
 }
 
 header nav{
@@ -81,6 +83,7 @@ header nav a p{
   display: flex;
   flex-direction: column;
   transition: 0.4s all;
+  z-index: 10000;
 }
 
 .menu-mobile span{
