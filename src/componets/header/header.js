@@ -18,7 +18,7 @@ export default function Header() {
             <h1>
               <IconsBs.BsGem /> Potiguar Minerais
             </h1>
-            <p>Mineração em todo o Brasil</p>
+            <p>Exportação em todo o Brasil</p>
           </a>
         </li>
       </nav>

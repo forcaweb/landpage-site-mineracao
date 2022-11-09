@@ -26,9 +26,8 @@
     "import/no-named-as-default": "off",
     "no-console": "off",
     "react/no-unescaped-entities": "off",
-    "import/no-unresolved": [
-      2,
-      { "caseSensitive": false }
-   ]
+    "import/no-unresolved": "off",
+    "no-unused-vars":"off",
+    "no-undef":"off"
   }
 }
