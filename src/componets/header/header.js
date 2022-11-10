@@ -30,6 +30,9 @@ export default function Header() {
         <li>
           <a href="/about">Sobre nós</a>
         </li>
+        <li>
+          <a href="/contact">Contato</a>
+        </li>
       </nav>
 
       <nav className="btn-mobile">
@@ -49,6 +52,9 @@ export default function Header() {
         </li>
         <li>
           <a href="/about">Sobre nós</a>
+        </li>
+        <li>
+          <a href="/contact">Contato</a>
         </li>
       </nav>
     </header>
