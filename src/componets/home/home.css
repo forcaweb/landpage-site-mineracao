@@ -3,6 +3,7 @@
   background: var(--grey-color);
   overflow: hidden;
   position: relative;
+  padding: 20px;
 }
 
 .swiper {
@@ -133,14 +134,14 @@
   }
 
   .swiper-button-prev:after{
-    background: var(--golden-color);
+    background: transparent;
     color: var(--black-color);
     font-size: 25px;
     padding: 10px;
   }
 
   .swiper-button-next:after{
-    background: var(--golden-color);
+    background: transparent;
     font-size: 25px;
     color: var(--black-color);
     padding: 10px;
@@ -152,5 +153,8 @@
 
   .image, .descriptions{
     flex: 100%;
+  }
+  .categories{
+    padding: 10px;
   }
 }

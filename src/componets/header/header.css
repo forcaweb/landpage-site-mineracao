@@ -7,8 +7,8 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--white-color);
-  padding: 20px 50px;
+  background: linear-gradient(to right,#fff, #d7d7d7);
+  padding: 10px 50px;
   z-index: 1000;
   box-shadow: 0 0 10px rgba(51, 51, 51, 0.213);
 }
@@ -31,10 +31,17 @@ header nav a{
   color: var(--black-color);
   font-weight: 400;
   transition: 0.4s all;
+  padding: 7px;
 }
 
 header nav a:hover{
   color: var(--yellow-color);
+}
+
+header nav:nth-child(2) a:hover{
+  color: var(--black-color);
+  background-color: var(--golden-color);
+  border-radius: 6px;
 }
 
 header nav a h1{
