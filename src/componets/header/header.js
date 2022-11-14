@@ -11,7 +11,7 @@ function showMenu() {
 
 export default function Header() {
   return (
-    <header>
+    <header className="header-navigation">
       <nav>
         <li>
           <a href="/">
@@ -25,7 +25,9 @@ export default function Header() {
 
       <nav className="menu">
         <li>
-          <a href="/">Home</a>
+          <a href="/">
+            <IconsAi.AiOutlineHome /> Home
+          </a>
         </li>
         <li>
           <a href="/about">Sobre nós</a>
