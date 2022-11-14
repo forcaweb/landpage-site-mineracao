@@ -1,7 +1,6 @@
 header{
   width: 100%;
-  position: sticky;
-  position: -webkit-sticky;
+  position: absolute;
   top: 0;
   left: 0;
   display: flex;
@@ -110,9 +109,10 @@ header nav a p{
   right: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   header{
     padding: 20px 30px;
+    position: relative;
   }
   .btn-mobile{
     display: flex;

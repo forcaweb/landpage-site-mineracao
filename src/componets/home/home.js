@@ -9,6 +9,8 @@ export default function Home() {
   return (
     <main>
       <section className="categories">
+        <h2 className="hdr">Nossas exportações:</h2>
+        <p className="dscpt">Conheça alguns dos minerais que trabalhamos.</p>
         <Swiper navigation modules={[Navigation]}>
           {infoSlider.map((item) => (
             <SwiperSlide key={item.id}>
@@ -30,6 +32,11 @@ export default function Home() {
             </SwiperSlide>
           ))}
         </Swiper>
+      </section>
+
+      <section className="container-info">
+        <h2>TEXTO</h2>
+        <article />
       </section>
     </main>
   );
