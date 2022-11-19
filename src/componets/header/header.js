@@ -33,7 +33,9 @@ export default function Header() {
           <a href="/about">Sobre nós</a>
         </li>
         <li>
-          <a href="/contact">Contato</a>
+          <a href="/contact" className="link-important">
+            Contato
+          </a>
         </li>
       </nav>
 

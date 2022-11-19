@@ -9,6 +9,7 @@
 }
 
 :root{
+  --bg-color: #1f0a53;
   --white-color: #fff;
   --defualt-color: #619fcc;
   --yellow-color: #EDC242;
@@ -23,7 +24,6 @@
 }
 
 body{
-  background: var(--grey-color);
   min-height: 100vh;
   color: var(--black-color);
   display: block;
