@@ -100,6 +100,21 @@ export default function Home() {
           </article>
         </div>
       </section>
+
+      <section className="goContact-container">
+        <section className="header-blocks">
+          <h2 className="hdr">Ficou interessado?</h2>
+          <p className="dcpt">
+            Trabalhe com quem entende do assunto, mande um email e entraremos em
+            contato
+          </p>
+        </section>
+        <nav>
+          <li>
+            <a href="/contact">Entrar em contato</a>
+          </li>
+        </nav>
+      </section>
     </main>
   );
 }

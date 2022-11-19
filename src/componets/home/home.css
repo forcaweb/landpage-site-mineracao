@@ -127,12 +127,15 @@
   justify-content: center;
   align-items: center;
   flex: 50%;
+  padding: 10px;
+  background-color: var(--defualt-color);
 }
 
 .image img{
   width: 100%;
   position: relative;
   display: block;
+  border-radius: 10px;
 }
 
 
@@ -282,6 +285,73 @@
   text-align: center;
 }
 
+.goContact-container{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  overflow: hidden;
+  gap: 10px;
+  background: var(--bg-color);
+}
+
+.goContact-container nav{
+  padding: 10px;
+  position: relative;
+  display: block;
+  transition: 0.4s all;
+}
+
+.goContact-container nav a{
+  padding: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-color);
+  color: var(--bg-color);
+  font-weight: 500;
+  transition: 0.4s all;
+}
+
+.goContact-container nav a:hover{
+  background-color: var(--yellow-color);
+}
+
+.goContact-container nav::after{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: var(--white-color);
+  top: 0;
+  right: 0;
+  transition: 0.4s all;
+}
+
+.goContact-container nav:hover::after{
+  right: 150px;
+  background-color: var(--yellow-color);
+}
+
+.goContact-container nav::before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: var(--white-color);
+  bottom: 0;
+  left: 0;
+  transition: 0.4s all;
+}
+
+.goContact-container nav:hover::before{
+  left: 150px;
+  background-color: var(--yellow-color);
+}
 
 @media only screen and (max-width: 850px){
   .categories{
