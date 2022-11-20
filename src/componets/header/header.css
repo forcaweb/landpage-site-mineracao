@@ -61,7 +61,7 @@
 }
 
 .header-navigation nav:nth-child(2) a:hover{
-  color: var(--defualt-color);
+  color: var(--default-color);
   border-radius: 1px;
 }
 
@@ -97,7 +97,7 @@
 }
 
 .header-navigation .btn-mobile button:hover{
-  color: var(--defualt-color);
+  color: var(--default-color);
 }
 
 .header-navigation .menu-mobile{
@@ -132,13 +132,15 @@
 }
 
 .link-important{
-  background-color: var(--yellow-color);
+  background-color: var(--default-color);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(51, 51, 51, 0.152);
+  color: var(--white-color) !important;
 }
 
 .link-important:hover{
   background-color: var(--grey-color);
+  color: var(--default-color) !important;
 }
 
 @media only screen and (max-width: 750px) {

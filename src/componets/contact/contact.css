@@ -1,0 +1,134 @@
+.contact-container{
+  width: 100%;
+  min-height: 100vh;
+  background: var(--white-color);
+}
+.header-contact{
+  width: 100%;
+  background: var(--default-color);
+  padding: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-contact h2{
+  position: relative;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: var(--white-color);
+  gap: 10px;
+}
+
+.form-container{
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-container form{
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-container form label{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.form-container form input{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid var(--default-color);
+  border-radius: 5px;
+}
+
+.form-container form button{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--default-color);
+  font-size: 20px;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.form-container nav{
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  font-size: 20px;
+  gap: 5px;
+}
+
+.form-container nav a{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 5px;
+  font-size: 25px;
+  color: var(--default-color);
+}
+
+.form-container nav li:nth-child(1) a:hover{
+  color: rgb(7, 123, 44);
+}
+
+.form-container nav li:nth-child(2) a:hover{
+  color: rgb(166, 3, 57);
+}
+
+.form-container nav li:nth-child(3) a:hover{
+  color: rgb(7, 65, 123);
+}
+
+.info-contacts{
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px 0;
+  font-size: 17px;
+  color: var(--default-color);
+}

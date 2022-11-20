@@ -5,6 +5,8 @@ import Home from './componets/home/home';
 import About from './componets/about/about';
 import Page404 from './componets/page404/page404';
 import Header from './componets/header/header';
+import Contact from './componets/contact/contact';
+
 import './App.css';
 
 export default function App() {
@@ -13,7 +15,8 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
     </>

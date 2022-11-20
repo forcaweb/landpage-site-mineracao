@@ -31,7 +31,7 @@ export default function Home() {
                   <p>{item.description}</p>
                   <nav>
                     <li>
-                      <a href="/">Fale conosco</a>
+                      <a href="/contact">Fale conosco</a>
                     </li>
                   </nav>
                 </div>
