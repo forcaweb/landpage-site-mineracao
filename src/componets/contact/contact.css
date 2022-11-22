@@ -72,7 +72,8 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: nowrap;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -80,6 +81,11 @@
   font-size: 20px;
   color: var(--white-color);
   cursor: pointer;
+  gap: 4px;
+}
+
+#btn-env{
+  display: none;
 }
 
 .form-container nav{
@@ -131,4 +137,18 @@
   padding: 10px 0;
   font-size: 17px;
   color: var(--default-color);
+}
+
+.form-container #nameMsg, .form-container #tellMsg, .form-container #emailMsg{
+  border: 1px dashed rgb(238, 31, 31);
+  width: 100%;
+  padding: 7px;
+  font-size: 12px;
+  border-radius: 5px;
+  position: relative;
+  display: none;
+}
+
+.show{
+  display: block;
 }
