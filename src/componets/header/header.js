@@ -30,7 +30,7 @@ export default function Header() {
           </a>
         </li>
         <li>
-          <a href="/about">Sobre nós</a>
+          <a href="/about">Quem Somos</a>
         </li>
         <li>
           <a href="/contact" className="link-important">
@@ -55,7 +55,7 @@ export default function Header() {
           <a href="/">Home</a>
         </li>
         <li>
-          <a href="/about">Sobre nós</a>
+          <a href="/about">Quem Somos</a>
         </li>
         <li>
           <a href="/contact">Contato</a>

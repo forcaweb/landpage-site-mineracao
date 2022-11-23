@@ -142,13 +142,19 @@
 .form-container #nameMsg, .form-container #tellMsg, .form-container #emailMsg{
   border: 1px dashed rgb(238, 31, 31);
   width: 100%;
-  padding: 7px;
   font-size: 12px;
   border-radius: 5px;
   position: relative;
-  display: none;
+  display: block;
+  overflow: hidden;
+  left: 0;
+  top:0;
+  opacity: 0;
+  height: 0;
 }
 
 .show{
-  display: block;
+  padding: 7px;
+  opacity: 100% !important;
+  height: auto !important;
 }

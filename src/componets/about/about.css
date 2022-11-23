@@ -1,0 +1,74 @@
+.about-container{
+  width: 100%;
+  min-height: 100vh;
+  background: var(--white-color);
+}
+.header-about{
+  width: 100%;
+  background: var(--default-color);
+  padding: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-about h2{
+  position: relative;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: var(--white-color);
+  gap: 10px;
+}
+
+.content-about{
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-contacts{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0;
+  font-size: 17px;
+  color: var(--default-color);
+}
+
+.content-about h2{
+  position: relative;
+  width: 90%;
+  font-size: 22px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: var(--blacl-color);
+}
+
+.content-about p{
+  position: relative;
+  width: 90%;
+  font-size: 17px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: var(--blacl-color);
+  font-family: Plus-Jakarta;
+}

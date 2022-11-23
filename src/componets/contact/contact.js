@@ -4,6 +4,7 @@ import * as IconAi from 'react-icons/ai';
 import * as IconFa from 'react-icons/fa';
 import * as IconMd from 'react-icons/md';
 import './contact.css';
+import env from 'react-dotenv';
 
 export default function Contact() {
   let respData = [];
@@ -29,29 +30,30 @@ export default function Contact() {
         respData = response.data;
 
         if (respData.name_error) {
-          nameMsg.style.display = 'block';
+          nameMsg.setAttribute('class', 'show');
           nameMsg.innerText = respData.name_error;
         } else {
-          nameMsg.style.display = 'none';
+          nameMsg.setAttribute('class', '');
         }
 
         if (respData.tell_error) {
-          tellMsg.style.display = 'block';
+          tellMsg.setAttribute('class', 'show');
           tellMsg.innerText = respData.tell_error;
         } else {
-          tellMsg.style.display = 'none';
+          tellMsg.setAttribute('class', '');
         }
 
         if (respData.email_error) {
-          emailMsg.style.display = 'block';
+          emailMsg.setAttribute('class', 'show');
           emailMsg.innerText = respData.email_error;
         } else {
-          emailMsg.style.display = 'none';
+          emailMsg.setAttribute('class', '');
         }
 
-        if (respData.success !== '') {
+        if (respData.success) {
           btnActv.style.display = 'none';
           btnEnv.style.display = 'flex';
+          btnEnv.style.background = '#08cd33';
         }
         console.log(respData);
       })
@@ -106,21 +108,22 @@ export default function Contact() {
             OK
             <IconMd.MdDone />
           </button>
+          <small>Tempo de espera em até 72 horas.</small>
         </form>
         <h2 className="info-contacts">Nossas redes sociais</h2>
         <nav>
           <li>
-            <a href="/">
+            <a href={env.WHATSAPP_LINK}>
               <IconFa.FaWhatsappSquare />
             </a>
           </li>
           <li>
-            <a href="/">
+            <a href={env.INSTAGRAM_LINK}>
               <IconFa.FaInstagramSquare />
             </a>
           </li>
           <li>
-            <a href="/">
+            <a href={env.FACEBOOK_LINK}>
               <IconFa.FaFacebookSquare />
             </a>
           </li>

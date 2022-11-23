@@ -23,6 +23,12 @@
   src: url(./utils/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
+@font-face {
+  font-family: Plus-Jakarta;
+  src: url(./utils/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+
 body{
   min-height: 100vh;
   color: var(--black-color);

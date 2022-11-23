@@ -38,6 +38,7 @@
       "required": {
         "some": [ "nesting", "id"  ]
       }
-    }]
+    }],
+    "react/self-closing-comp": "off"
   }
 }

@@ -59,7 +59,10 @@
   "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
   "react-dotenv": {
     "whitelist": [
-      "API_URL"
+      "API_URL",
+      "FACEBOOK_LINK",
+      "INSTAGRAM_LINK",
+      "WHATSAPP_LINK"
     ]
   }
 }
