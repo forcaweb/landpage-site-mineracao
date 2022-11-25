@@ -21,7 +21,7 @@ export default function Contact() {
     const btnActv = document.getElementById('btn-actv');
 
     axios
-      .post('http://localhost:3333', {
+      .post('https://potiguarminerais.com.br:3000/email', {
         name: name.value,
         tell: tell.value,
         email: email.value,
@@ -55,7 +55,6 @@ export default function Contact() {
           btnEnv.style.display = 'flex';
           btnEnv.style.background = '#08cd33';
         }
-        console.log(respData);
       })
       .catch((error) => {
         console.log(error);
