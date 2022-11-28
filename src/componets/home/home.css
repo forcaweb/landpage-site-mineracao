@@ -60,6 +60,14 @@
   border-radius: 3px;
 }
 
+.categories .header-blocks .hdr{
+  font-size: 50px;
+}
+.categories .header-blocks .dcpt{
+  font-size: 20px;
+}
+
+
 .container-info .header-blocks .hdr,
 .container-info .header-blocks .dcpt{
   color: var(--black-color);
@@ -98,11 +106,11 @@
 }
 
 .swiper-button-prev:after{
-  color: var(--white-color);
+  color: var(--default-color);
   padding: 10px;
 }
 .swiper-button-next:after{
-  color: var(--white-color);
+  color: var(--default-color);
   padding: 10px;
 }
 
@@ -349,6 +357,24 @@
 .goContact-container nav:hover::before{
   left: 150px;
   background-color: var(--yellow-color);
+}
+
+.galery-container{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  overflow: hidden;
+  gap: 10px;
+}
+
+.galery-container .header-blocks .hdr,
+.galery-container .header-blocks .dcpt{
+  color: var(--black-color);
 }
 
 @media only screen and (max-width: 850px){

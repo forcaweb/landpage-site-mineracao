@@ -6,6 +6,7 @@ import * as IconBs from 'react-icons/bs';
 import * as IconBi from 'react-icons/bi';
 import { Navigation } from 'swiper';
 import infoSlider from '../../utils/infoSliderHome';
+
 import 'swiper/swiper-bundle.min.css';
 
 import './home.css';
@@ -15,30 +16,11 @@ export default function Home() {
     <main className="all-content">
       <section className="categories">
         <section className="header-blocks">
-          <h2 className="hdr">Nossas exportações:</h2>
-          <p className="dcpt">Confira os minerais que trabalhamos.</p>
+          <h2 className="hdr">Potiguar Minerais</h2>
+          <p className="dcpt">
+            Exportações em todo o Brasil, do Rio Grande do Norte para Brasil.
+          </p>
         </section>
-        <Swiper navigation modules={[Navigation]}>
-          {infoSlider.map((item) => (
-            <SwiperSlide key={item.id}>
-              <section className="content">
-                <div className="image">
-                  <img src={item.img} alt="" />
-                </div>
-                <div className="descriptions">
-                  <h2>{item.tittle}</h2>
-                  <small>{item.subTittle}</small>
-                  <p>{item.description}</p>
-                  <nav>
-                    <li>
-                      <a href="/contact">Fale conosco</a>
-                    </li>
-                  </nav>
-                </div>
-              </section>
-            </SwiperSlide>
-          ))}
-        </Swiper>
       </section>
 
       <section className="container-info">
@@ -114,6 +96,58 @@ export default function Home() {
             <a href="/contact">Entrar em contato</a>
           </li>
         </nav>
+      </section>
+
+      <section className="galery-container">
+        <section className="header-blocks">
+          <h2 className="hdr">Nossas exportações:</h2>
+          <p className="dcpt">Confira os minerais que trabalhamos.</p>
+        </section>
+        <Swiper navigation modules={[Navigation]}>
+          <SwiperSlide>
+            <section className="content">
+              <div className="image">
+                <iframe
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/FXol5v6E3p8"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                ></iframe>
+              </div>
+              <div className="descriptions">
+                <h2>Imagens de trabalho</h2>
+                <small>Capturados em nossos trabalhos pelo Brasil.</small>
+                <p>Trbalhamos com grandes empresas.</p>
+                <nav>
+                  <li>
+                    <a href="/contact">Fale conosco</a>
+                  </li>
+                </nav>
+              </div>
+            </section>
+          </SwiperSlide>
+          {infoSlider.map((item) => (
+            <SwiperSlide key={item.id}>
+              <section className="content">
+                <div className="image">
+                  <img src={item.img} alt="" />
+                </div>
+                <div className="descriptions">
+                  <h2>{item.tittle}</h2>
+                  <small>{item.subTittle}</small>
+                  <p>{item.description}</p>
+                  <nav>
+                    <li>
+                      <a href="/contact">Fale conosco</a>
+                    </li>
+                  </nav>
+                </div>
+              </section>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </section>
     </main>
   );
