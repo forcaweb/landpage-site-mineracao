@@ -115,15 +115,15 @@
 }
 
 .form-container nav li:nth-child(1) a:hover{
-  color: rgb(7, 123, 44);
+  color: #077b2c;
 }
 
 .form-container nav li:nth-child(2) a:hover{
-  color: rgb(166, 3, 57);
+  color: #a60339;
 }
 
 .form-container nav li:nth-child(3) a:hover{
-  color: rgb(7, 65, 123);
+  color: #0965c2;
 }
 
 .info-contacts{
