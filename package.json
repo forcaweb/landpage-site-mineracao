@@ -63,7 +63,9 @@
       "API_URL",
       "FACEBOOK_LINK",
       "INSTAGRAM_LINK",
-      "WHATSAPP_LINK"
+      "WHATSAPP_LINK",
+      "BASE_URL_DEV",
+      "BASE_URL_PROD"
     ]
   }
 }

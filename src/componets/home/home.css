@@ -377,6 +377,36 @@
   color: var(--black-color);
 }
 
+.partners-container{
+  background: var(--white-color);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.partners-container .partners{
+  width: 100%;
+  display: block;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.partners-container .partners img{
+  width: 270px;
+  height: 270px;
+}
+
+.partners-container .header-blocks .hdr,
+.partners-container .header-blocks .dcpt{
+  color: var(--black-color);
+}
+
 @media only screen and (max-width: 850px){
   .categories{
     padding: 20px;

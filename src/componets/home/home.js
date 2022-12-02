@@ -4,8 +4,10 @@ import * as IconAi from 'react-icons/ai';
 import * as IconSi from 'react-icons/si';
 import * as IconBs from 'react-icons/bs';
 import * as IconBi from 'react-icons/bi';
-import { Navigation } from 'swiper';
+import { Navigation, Pagination, Autoplay } from 'swiper';
+import env from 'react-dotenv';
 import infoSlider from '../../utils/infoSliderHome';
+import partners from '../../utils/partners';
 
 import 'swiper/swiper-bundle.min.css';
 
@@ -119,7 +121,7 @@ export default function Home() {
               <div className="descriptions">
                 <h2>Imagens de trabalho</h2>
                 <small>Capturados em nossos trabalhos pelo Brasil.</small>
-                <p>Trbalhamos com grandes empresas.</p>
+                <p>Trabalhamos com grandes empresas.</p>
                 <nav>
                   <li>
                     <a href="/contact">Fale conosco</a>
@@ -148,6 +150,41 @@ export default function Home() {
             </SwiperSlide>
           ))}
         </Swiper>
+      </section>
+
+      <section className="partners-container">
+        <section className="header-blocks">
+          <h2 className="hdr">Nossos parceiros:</h2>
+          <p className="dcpt">Trabalhamos com os melhores.</p>
+        </section>
+        <section className="partners">
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={10}
+            navigation
+            breakpoints={{
+              769: {
+                slidesPerView: 2,
+              },
+              1080: {
+                slidesPerView: 4,
+              },
+            }}
+            autoplay={{
+              delay: 3000,
+              speed: 3000,
+              disableOnInteraction: false,
+            }}
+            loop
+            modules={[Navigation, Autoplay]}
+          >
+            {partners.map((item) => (
+              <SwiperSlide key={item.id}>
+                <img src={`${env.BASE_URL_PROD}/img/${item.img}`} alt="logo" />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </section>
       </section>
     </main>
   );
