@@ -6,6 +6,7 @@ import About from './componets/about/about';
 import Page404 from './componets/page404/page404';
 import Header from './componets/header/header';
 import Contact from './componets/contact/contact';
+import Footer from './componets/footer/footer';
 
 import './App.css';
 
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
+      <Footer />
     </>
   );
 }

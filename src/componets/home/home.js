@@ -16,7 +16,7 @@ import './home.css';
 export default function Home() {
   return (
     <main className="all-content">
-      <section className="categories">
+      <section className="homeMsg">
         <section className="header-blocks">
           <h2 className="hdr">Potiguar Minerais</h2>
           <p className="dcpt">
@@ -184,6 +184,10 @@ export default function Home() {
               </SwiperSlide>
             ))}
           </Swiper>
+        </section>
+        <section className="msg">
+          <IconAi.AiTwotoneLike />
+          <p>Invista em uma empresa que só cresce.</p>
         </section>
       </section>
     </main>

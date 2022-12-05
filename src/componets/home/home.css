@@ -6,10 +6,14 @@
   background-size: contain;
   background-attachment: scroll;
   box-shadow: inset 0 1000px 0 rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.categories{
+.homeMsg{
   width: 100%;
-  min-height: 100vh;
+  height: 370px;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -197,7 +201,7 @@
 .container-info{
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -361,7 +365,7 @@
 
 .galery-container{
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -405,6 +409,29 @@
 .partners-container .header-blocks .hdr,
 .partners-container .header-blocks .dcpt{
   color: var(--black-color);
+}
+
+.partners-container .msg{
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0px;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.partners-container .msg svg{
+  font-size: 30px;
+  color: var(--default-color);
+}
+
+.partners-container .msg p{
+  font-size: 20px;
+  color: var(--default-color);
 }
 
 @media only screen and (max-width: 850px){
